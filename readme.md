@@ -1,3 +1,39 @@
+# Simple TOTP Generation Using Python Script
+
+## Introduction
+
+Apart from the API method, this repository also includes a straightforward Python script that allows you to generate TOTP codes locally on your machine. This method is ideal for quick tests or for those who prefer a more direct approach without the need for API calls.
+
+## Usage
+
+1. **Navigate to the Script Directory:**
+
+   Ensure you're in the directory containing the Python script for TOTP generation.
+
+2. **Run the Python Script:**
+
+   You can generate a TOTP code by running the script and providing your secret key as an input. Use the following command in your terminal:
+
+    ```bash
+    python generate_totp.py
+    ```
+
+3. **Input Your Secret Key:**
+
+   When prompted, enter the secret key for which you want to generate the TOTP code.
+
+    ```
+    Enter your secret key: [Your_Secret_Key]
+    ```
+
+   After entering the secret key, the script will display the TOTP code.
+
+## Note:
+
+- This script requires the `pyotp` library. Ensure that you have installed it using the command `pip install pyotp`.
+- The TOTP code generated is valid only for a short period (usually 30 seconds). Make sure to use it within this timeframe.
+
+
 # TOTP Generator API
 
 ## Introduction
