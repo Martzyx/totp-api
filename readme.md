@@ -1,10 +1,16 @@
-# Simple TOTP Generation Using Python Script
+# TOTP Generation for Software Implementation Teams
 
-## Introduction
+## Purpose and background
+In software implementation teams, like I am in, we often need to set up 2FA for many backends. With these scripts, we can input a secret key to get the TOTP (time-based one-time password). This is in contrast to each member of the team using private apps to store and retrieve TOTPs.
 
-Apart from the API method, this repository also includes a straightforward Python script that allows you to generate TOTP codes locally on your machine. This method is ideal for quick tests or for those who prefer a more direct approach without the need for API calls.
 
-## Usage
+## Simple TOTP Generation Using Python Script
+
+### Introduction
+
+This is a straightforward Python script that allows you to generate TOTP codes locally on your machine. This method is ideal for quick tests or for those who prefer a more direct approach without the need for API calls.
+
+### Usage
 
 1. **Navigate to the Script Directory:**
 
@@ -28,19 +34,19 @@ Apart from the API method, this repository also includes a straightforward Pytho
 
    After entering the secret key, the script will display the TOTP code.
 
-## Note:
+### Note:
 
 - This script requires the `pyotp` library. Ensure that you have installed it using the command `pip install pyotp`.
 - The TOTP code generated is valid only for a short period (usually 30 seconds). Make sure to use it within this timeframe.
 
 
-# TOTP Generator API
+## TOTP Generator API
 
-## Introduction
+### Introduction
 
 This is a simple TOTP (Time-based One-Time Password) generator API built using Flask and the `pyotp` library. It allows users to setup accounts with a secret key for two-factor authentication and retrieve TOTP codes for those accounts.
 
-## Installation
+### Installation
 
 1. **Clone the repository:**
 
@@ -61,7 +67,7 @@ This is a simple TOTP (Time-based One-Time Password) generator API built using F
     ```
     The application will start, and you can access it at `http://127.0.0.1:5000`.
 
-## Usage
+### Usage
 
 ### Setup Account
 
@@ -79,7 +85,7 @@ To retrieve the TOTP code for a specific account, make a GET request to the `/ge
 curl http://127.0.0.1:5000/get-totp/your_username
 ```
 
-## Security Notice
+### Security Notice
 
 -   This application is a basic demonstration and not suitable for production use as it lacks essential security measures.
 -   Secrets should be stored securely, with encryption, in a production environment.
