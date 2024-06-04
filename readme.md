@@ -51,7 +51,7 @@ This is a simple TOTP (Time-based One-Time Password) generator API built using F
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/Martzyx/totp-api
+    git clone https://github.com/martzyx/totp-api
     cd your-repository-directory
     ```
 
@@ -91,3 +91,7 @@ curl http://127.0.0.1:5000/get-totp/your_username
 -   Secrets should be stored securely, with encryption, in a production environment.
 -   Implement proper authentication mechanisms to secure the API endpoints.
 -   Make sure to use HTTPS to encrypt data transmitted between the client and server.
+
+### Useful links
+
+- https://totp.danhersam.com/
